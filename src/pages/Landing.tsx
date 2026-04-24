@@ -26,7 +26,8 @@ export default function Landing() {
           lessons map the Composition API to React Hooks side-by-side — <code>ref</code> →{" "}
           <code>useState</code>, <code>computed</code> → <code>useMemo</code>,{" "}
           <code>watch</code> → <code>useEffect</code>, <code>provide/inject</code> →{" "}
-          <code>Context</code>, Pinia → Zustand, Vue Router → React Router.
+          <code>Context</code>, <code>Pinia</code> → <code>Zustand</code>,{" "}
+          <code>Vue Router</code> → <code>React Router</code>.
         </p>
 
         <p className="landing-sub">
