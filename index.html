@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0d12" />
+    <title>vue2react — Learn React as a Vue developer</title>
+    <meta
+      name="description"
+      content="Free, interactive React tutorial for Vue 3 developers. 21 side-by-side lessons mapping Composition API to React Hooks — ref → useState, computed → useMemo, watch → useEffect, Pinia → Zustand, Vue Router → React Router. Covers React 19."
+    />
+    <meta
+      name="keywords"
+      content="vue to react, react for vue developers, learn react from vue, vue vs react, composition api to react hooks, ref to useState, computed to useMemo, pinia to zustand, vue router to react router, react 19 tutorial"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="vue2react" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="vue2react — Learn React as a Vue developer" />
+    <meta
+      property="og:description"
+      content="Free, interactive React tutorial for Vue 3 developers. 21 side-by-side lessons mapping the Composition API to React Hooks, with live demos and in-browser exercises."
+    />
+    <meta property="og:site_name" content="vue2react" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="vue2react — Learn React as a Vue developer" />
+    <meta
+      name="twitter:description"
+      content="Free, interactive React tutorial for Vue 3 developers. 21 side-by-side lessons mapping Vue Composition API to React Hooks."
+    />
+  </head>
+  <body>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          document.documentElement.dataset.theme = theme;
+        } catch (_) {}
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

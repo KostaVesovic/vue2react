@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "react", "jsx-a11y"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn",
+    "style": "warn",
+    "restriction": "off",
+    "pedantic": "off",
+    "nursery": "off"
+  },
+  "env": {
+    "browser": true,
+    "es2024": true
+  },
+  "ignorePatterns": [
+    "dist",
+    "node_modules",
+    "src/lessons/**/Exercise.tsx",
+    "src/lessons/**/Demo.tsx",
+    "src/lessons/**/Solution.tsx"
+  ],
+  "rules": {
+    "no-console": "warn",
+    "react/no-unescaped-entities": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-max-depth": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "react/no-array-index-key": "off",
+    "sort-keys": "off",
+    "sort-imports": "off",
+    "func-style": "off",
+    "no-ternary": "off",
+    "id-length": "off",
+    "no-magic-numbers": "off",
+    "curly": "off",
+    "unicorn/prefer-global-this": "off",
+    "unicorn/filename-case": "off",
+    "unicorn/prefer-string-raw": "off"
+  }
+}
